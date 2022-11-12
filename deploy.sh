@@ -93,6 +93,9 @@ cat > $CONFIGNAME <<CONFIG
             }
           }
         }
+      },
+      "mux": {
+        "enabled": true
       }
     },
     {
