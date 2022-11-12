@@ -159,6 +159,9 @@ firewall(){
   # Allow PORT in IP Tables
   iptables -t filter -A INPUT -p tcp --dport $PORT -j ACCEPT
   iptables -t filter -A OUTPUT -p tcp --dport $PORT -j ACCEPT
+
+  iptables -t filter -A INPUT -p tcp --dport 8443 -j ACCEPT
+  iptables -t filter -A OUTPUT -p tcp --dport 8443 -j ACCEPT
 }
 firewall
 
